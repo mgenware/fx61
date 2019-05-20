@@ -1,0 +1,33 @@
+{
+  "name": "fx61-app",
+  "version": "0.0.0",
+  "private": true,
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "scripts": {
+    "build": "yarn run lint && yarn run clean && cross-env NODE_ENV=production rollup -c",
+    "compile": "tsc",
+    "dev": "yarn run clean && cross-env NODE_ENV=development rollup -c -w",
+    "lint": "tslint --project tsconfig.json --config tslint.json",
+    "clean": "del-cli dist",
+    "test": "yarn build"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "lit-element": "^2.1.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "del-cli": "^1.1.0",
+    "rollup": "^1.12.3",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-node-resolve": "^5.0.0",
+    "rollup-plugin-terser": "^4.0.4",
+    "rollup-plugin-typescript2": "^0.21.1",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5",
+    "unique-temp-dir": "^1.0.0"
+  }
+}
