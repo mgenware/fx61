@@ -9,8 +9,7 @@
     "compile": "tsc",
     "dev": "yarn run clean && cross-env NODE_ENV=development rollup -c -w",
     "lint": "tslint --project tsconfig.json --config tslint.json",
-    "clean": "del-cli dist",
-    "test": "yarn build"
+    "clean": "del-cli dist"
   },
   "engines": {
     "node": ">=8.0.0"
