@@ -21,7 +21,7 @@ const tasks = [
   {
     input: 'src/main.ts',
     output: {
-      name: 'kangxi',
+      name: 'fx61',
       file: 'dist/main.js',
       format: 'umd',
       exports: 'named',
