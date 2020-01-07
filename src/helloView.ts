@@ -1,6 +1,7 @@
 import { LitElement, html, customElement, css } from 'lit-element';
-import './common/shadowed-text';
-import './common/flat-button';
+import './common/shadowedText';
+import './common/flatButton';
+import './common/objectPropsView';
 
 @customElement('hello-view')
 export class HelloView extends LitElement {
@@ -18,6 +19,8 @@ export class HelloView extends LitElement {
         <shadowed-text text="Hello World"></shadowed-text>
         <br />
         <flat-button @click=${this.clickHandler}>Button</flat-button>
+        <hr />
+        <object-props-view><object-props-view>
       </p>
     `;
   }
