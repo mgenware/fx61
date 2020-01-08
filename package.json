@@ -15,7 +15,8 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "lit-element": "^2.2.1"
+    "lit-element": "^2.2.1",
+    "lit-props": "^0.0.1"
   },
   "devDependencies": {
     "cross-env": "^6.0.3",
