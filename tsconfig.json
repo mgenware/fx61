@@ -12,6 +12,7 @@
     "lib": ["es2017", "dom"],
     "experimentalDecorators": true,
     "resolveJsonModule": true,
+    "newLine": "lf",
     "baseUrl": "src"
   },
   "include": ["src/**/*", "tests"],
